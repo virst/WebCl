@@ -1,0 +1,90 @@
+﻿@page
+@model WebCl.Pages.ComboModel
+@{
+}
+
+
+<div class="container">
+    <h1 class="text-success">
+        GeeksforGeeks
+    </h1>
+    <h2>
+        Multiple Selection Dropdown with Checkbox
+    </h2>
+
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle w-50"
+                type="button"
+                id="multiSelectDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+            Select
+        </button>
+        <ul class="dropdown-menu"
+            aria-labelledby="multiSelectDropdown">
+            <li>
+                <label>
+                    <input type="checkbox"
+                           value="Java">
+                    Java
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"
+                           value="C++">
+                    C++
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"
+                           value="Python">
+                    Python
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle w-25"
+                type="button"
+                id="multiSelectDropdown2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+            Select
+        </button>
+        <ul class="dropdown-menu"
+            aria-labelledby="multiSelectDropdown2">
+            <li>
+                <label>
+                    <input type="checkbox"
+                           value="Java" checked>
+                    Java
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"
+                           value="C++" checked>
+                    C++
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox"
+                           value="Python">
+                    Python
+                </label>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+
+    makeMultiSelectDropdown('multiSelectDropdown', 'Выбор');
+    makeMultiSelectDropdown('multiSelectDropdown2');
+
+</script> 
